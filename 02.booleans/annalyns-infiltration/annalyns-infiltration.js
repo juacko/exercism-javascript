@@ -76,3 +76,11 @@ export function canFreePrisoner(
   return (prisonerIsAwake&& !knightIsAwake && !archerIsAwake)
   || (!archerIsAwake && petDogIsPresent)
 }
+
+
+//como hacer la verificación de un login para que el usuario pueda loguearse
+
+function validateLogin(username, password) {
+  
+  if (username === 'admin' && password === 'admin') return true
+  else return false} 
